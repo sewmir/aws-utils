@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class S3Utils {
 
-    public static InputStream getFileContentInS3(String bucketName, String key) {
+    public InputStream getFileContentInS3(String bucketName, String key) {
         InputStream objectStream = null;
         try {
             AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
